@@ -1,1 +1,21 @@
+*{
+   box-sizing:border-box;
+}
 
+.container{
+   margin:10px;
+   display:flex;
+   flex-wrap:wrap;
+   width:1000px;
+   height:1000px;
+}
+
+.container .color{
+   background-color: rgb(165, 165, 132);
+   margin:0px;
+
+}
+
+.container div.black{
+   background-color:black;
+}
