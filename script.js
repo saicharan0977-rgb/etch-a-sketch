@@ -49,10 +49,10 @@ container.addEventListener("mouseover",(e)=>{
 
   if(repNum>0){
   
-/*e.target.classList.add("black");*///black
-
-
-let rndool= +(e.target.dataset.opacity) ;
+/*e.target.classList.add("black");*/
+const rndCol = `rgb(${Random(255)} ,${Random(255)} ,${Random(255)})`;
+e.target.style.backgroundColor = rndCol;
+/*let rndool= +(e.target.dataset.opacity) ;
 const rndCol = `rgba( 0, 0 ,0 ,${colg(rndool)}%)`;
 e.target.style.backgroundColor = rndCol;
 if(rndool<100){
@@ -61,5 +61,6 @@ e.target.dataset.opacity =(rndool+10).toString();
 else{
   e.target.dataset.opacity =(rndool).toString();
 }
+  */
   }
 });
